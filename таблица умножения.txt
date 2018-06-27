@@ -1,0 +1,13 @@
+#Напишите программу, на вход которой даются четыре числа a, b, c и d, каждое в своей строке. 
+#Программа должна вывести фрагмент таблицы умножения для всех чисел отрезка [a;b] на все числа отрезка [c;d].
+
+v1, v2, v3, v4 = [int(input()) for i in range(4)]
+
+for g in range (v3, v4+1):
+    print('\t' + str(g), end=' ')
+print(end='\n')
+for i in range (v1, v2+1):
+    print(str(i) + '\t', end='')
+    for j in range(v3, v4+1):
+      print(i * j, end='\t')
+    print(end='\n')
